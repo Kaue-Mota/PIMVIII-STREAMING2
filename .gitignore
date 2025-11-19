@@ -1,0 +1,23 @@
+# Build results
+bin/
+obj/
+
+# Visual Studio cache
+.vs/
+*.user
+*.suo
+*.vsidx
+
+# OS junk
+Thumbs.db
+*.DS_Store
+
+# Logs
+*.log
+
+# Database local
+*.mdf
+*.ldf
+
+# IDEs
+.vscode/
