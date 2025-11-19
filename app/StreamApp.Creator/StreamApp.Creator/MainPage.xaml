@@ -1,0 +1,57 @@
+﻿<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamApp.Creator.MainPage"
+             BackgroundColor="#1e1e1e">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="25">
+
+            <!-- TÍTULO -->
+            <Label Text="Portal do Criador de Conteúdo"
+                   FontSize="28"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <!-- SUBTÍTULO -->
+            <Label Text="Gerencie seus conteúdos e estatísticas"
+                   FontSize="16"
+                   TextColor="#cccccc"
+                   HorizontalOptions="Center" />
+
+            <Button Text="Cadastrar Novo Conteúdo"
+        CornerRadius="10"
+        BackgroundColor="#7c4dff"
+        TextColor="White"
+        FontSize="18"
+        HeightRequest="55"
+        Clicked="OnCadastrarConteudoClicked" />
+
+            <Button Text="Meus Conteúdos"
+        CornerRadius="10"
+        BackgroundColor="#5e35b1"
+        TextColor="White"
+        FontSize="18"
+        HeightRequest="55"
+        Clicked="OnMeusConteudosClicked" />
+
+            <Button Text="Minhas Playlists"
+        CornerRadius="10"
+        BackgroundColor="#512da8"
+        TextColor="White"
+        FontSize="18"
+        HeightRequest="55"
+        Clicked="OnMinhasPlaylistsClicked" />
+
+            <Button Text="Estatísticas"
+        CornerRadius="10"
+        BackgroundColor="#311b92"
+        TextColor="White"
+        FontSize="18"
+        HeightRequest="55"
+        Clicked="OnEstatisticasClicked" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

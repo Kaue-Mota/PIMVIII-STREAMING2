@@ -1,0 +1,46 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamApp.Creator.MeusConteudosPage"
+             Title="Meus Conteúdos"
+             BackgroundColor="#1e1e1e">
+
+
+
+
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <Label Text="Meus Conteúdos"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="#2a2a2a" Padding="10" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Filme de Teste"
+                           TextColor="White"
+                           FontAttributes="Bold" />
+                    <Label Text="Tipo: Filme"
+                           TextColor="#CCCCCC" />
+                    <Label Text="Status: Publicado"
+                           TextColor="#90caf9" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#2a2a2a" Padding="10" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Série de Teste"
+                           TextColor="White"
+                           FontAttributes="Bold" />
+                    <Label Text="Tipo: Série"
+                           TextColor="#CCCCCC" />
+                    <Label Text="Status: Em revisão"
+                           TextColor="#ffcc80" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

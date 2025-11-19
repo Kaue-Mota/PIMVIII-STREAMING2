@@ -1,0 +1,73 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamApp.Creator.EstatisticasPage"
+             Title="Estatísticas"
+             BackgroundColor="#1e1e1e">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Estatísticas do Criador"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Grid ColumnDefinitions="*,*"
+                  RowDefinitions="Auto,Auto,Auto"
+                  ColumnSpacing="10"
+                  RowSpacing="10">
+
+                <Frame Grid.Row="0" Grid.Column="0"
+                       BackgroundColor="#2a2a2a" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout>
+                        <Label Text="Conteúdos Publicados"
+                               TextColor="#CCCCCC" />
+                        <Label Text="12"
+                               FontSize="22"
+                               TextColor="White"
+                               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="0" Grid.Column="1"
+                       BackgroundColor="#2a2a2a" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout>
+                        <Label Text="Total de Visualizações"
+                               TextColor="#CCCCCC" />
+                        <Label Text="3.250"
+                               FontSize="22"
+                               TextColor="White"
+                               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="0"
+                       BackgroundColor="#2a2a2a" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout>
+                        <Label Text="Playlists com seu conteúdo"
+                               TextColor="#CCCCCC" />
+                        <Label Text="8"
+                               FontSize="22"
+                               TextColor="White"
+                               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Grid.Row="1" Grid.Column="1"
+                       BackgroundColor="#2a2a2a" CornerRadius="10" Padding="10">
+                    <VerticalStackLayout>
+                        <Label Text="Média de avaliação"
+                               TextColor="#CCCCCC" />
+                        <Label Text="4.6 / 5"
+                               FontSize="22"
+                               TextColor="White"
+                               FontAttributes="Bold" />
+                    </VerticalStackLayout>
+                </Frame>
+
+            </Grid>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

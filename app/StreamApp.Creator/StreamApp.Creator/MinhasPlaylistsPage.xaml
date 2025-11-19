@@ -1,0 +1,38 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamApp.Creator.MinhasPlaylistsPage"
+             Title="Minhas Playlists"
+             BackgroundColor="#1e1e1e">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="12">
+
+            <Label Text="Minhas Playlists"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Frame BackgroundColor="#2a2a2a" Padding="10" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Playlist de Lançamentos"
+                           TextColor="White"
+                           FontAttributes="Bold" />
+                    <Label Text="Quantidade de conteúdos: 10"
+                           TextColor="#CCCCCC" />
+                </VerticalStackLayout>
+            </Frame>
+
+            <Frame BackgroundColor="#2a2a2a" Padding="10" CornerRadius="10">
+                <VerticalStackLayout>
+                    <Label Text="Playlist Favoritos"
+                           TextColor="White"
+                           FontAttributes="Bold" />
+                    <Label Text="Quantidade de conteúdos: 5"
+                           TextColor="#CCCCCC" />
+                </VerticalStackLayout>
+            </Frame>
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>

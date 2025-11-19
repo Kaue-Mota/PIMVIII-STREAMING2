@@ -1,0 +1,50 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="StreamApp.Creator.CadastrarConteudoPage"
+             Title="Cadastrar Conteúdo"
+             BackgroundColor="#1e1e1e">
+
+    <ScrollView>
+        <VerticalStackLayout Padding="20" Spacing="15">
+
+            <Label Text="Cadastrar Novo Conteúdo"
+                   FontSize="24"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center" />
+
+            <Label Text="Título"
+                   TextColor="#CCCCCC" />
+            <Entry Placeholder="Digite o título do conteúdo"
+                   BackgroundColor="#2a2a2a"
+                   TextColor="White" />
+
+            <Label Text="Tipo"
+                   TextColor="#CCCCCC" />
+            <Picker BackgroundColor="#2a2a2a"
+                    TextColor="White">
+                <Picker.Items>
+                    <x:String>Filme</x:String>
+                    <x:String>Série</x:String>
+                    <x:String>Documentário</x:String>
+                    <x:String>Podcast</x:String>
+                </Picker.Items>
+            </Picker>
+
+            <Label Text="Descrição"
+                   TextColor="#CCCCCC" />
+            <Editor Placeholder="Resumo do conteúdo"
+                    BackgroundColor="#2a2a2a"
+                    TextColor="White"
+                    AutoSize="TextChanges"
+                    HeightRequest="120" />
+
+            <Button Text="Salvar (simulação)"
+                    BackgroundColor="#7c4dff"
+                    TextColor="White"
+                    CornerRadius="10"
+                    HeightRequest="50" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
